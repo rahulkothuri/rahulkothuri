@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I'm currently studying Data Science at Mohan Babu University.<br>👯 I'm worked as a contributor at GSSOC'23.<br>🪴 I'm currently learning Machine Learning and Java.<br>
+🔭 I'm currently studying Data Science at Mohan Babu University.<br>👯 I worked as a contributor at GSSOC'23.<br>🪴 I'm currently learning Genrative AI and Deep Learning.<br> 👑AWS Cloud Clubs Captain - India Region.<br>
 
 
 ## 🌐 Socials:
