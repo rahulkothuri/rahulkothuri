@@ -7,7 +7,8 @@ const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-aws-blue via-blue-900 to-cloud-dark text-white py-20 md:py-32">
+      
+      <section className="relative bg-gradient-to-r from-aws-blue to-cloud-dark text-white py-16 md:py-32">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 w-64 h-64 bg-white/5 rounded-full filter blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-aws-blue/10 rounded-full filter blur-3xl"></div>
@@ -36,7 +37,7 @@ const HomePage = () => {
                     View Projects
                   </Button>
                 </Link>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10" size="lg">
+                <Button className="bg-cloud-blue text-white hover:bg-cloud-blue/90" size="lg">
                   Contact Me
                 </Button>
               </div>

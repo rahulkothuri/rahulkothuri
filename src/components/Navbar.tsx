@@ -39,9 +39,15 @@ const Navbar = () => {
           
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
-            <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle menu">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
+              className={isMenuOpen ? "bg-aws-blue text-white" : ""}
+            >
               {isMenuOpen ? (
-                <X className="h-6 w-6 text-aws-blue" />
+                <X className="h-6 w-6 text-white" />
               ) : (
                 <Menu className="h-6 w-6 text-aws-blue" />
               )}
