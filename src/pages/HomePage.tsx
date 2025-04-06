@@ -10,15 +10,17 @@ const HomePage = () => {
       <section className="relative bg-gradient-to-br from-aws-blue via-blue-900 to-cloud-dark text-white py-20 md:py-32">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 w-64 h-64 bg-white/5 rounded-full filter blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-aws-orange/10 rounded-full filter blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-aws-blue/10 rounded-full filter blur-3xl"></div>
         </div>
         <div className="section-container relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-8 max-w-5xl mx-auto">
             <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
-              <div className="relative w-64 h-64 rounded-full bg-gradient-to-r from-aws-blue to-aws-orange p-1">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <GraduationCap className="h-32 w-32 text-white" />
-                </div>
+              <div className="relative w-64 h-64 rounded-full bg-gradient-to-r from-aws-blue to-cloud-blue p-1 overflow-hidden">
+                <img 
+                  src="/lovable-uploads/9ac40d47-fe8d-4c74-9e13-be54b0bc27f8.png" 
+                  alt="Rahul Kothuri" 
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </div>
             <div className="md:w-1/2">
@@ -30,7 +32,7 @@ const HomePage = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/projects">
-                  <Button className="bg-aws-orange text-white hover:bg-aws-orange/90" size="lg">
+                  <Button className="bg-cloud-blue text-white hover:bg-cloud-blue/90" size="lg">
                     View Projects
                   </Button>
                 </Link>
@@ -109,7 +111,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project Card 1 */}
             <div className="cloud-card overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-aws-blue to-aws-orange flex items-center justify-center">
+              <div className="h-48 bg-gradient-to-r from-aws-blue to-cloud-blue flex items-center justify-center">
                 <Cloud className="h-16 w-16 text-white" />
               </div>
               <div className="p-6">
@@ -130,7 +132,7 @@ const HomePage = () => {
             
             {/* Project Card 2 */}
             <div className="cloud-card overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-aws-blue to-aws-orange flex items-center justify-center">
+              <div className="h-48 bg-gradient-to-r from-aws-blue to-cloud-blue flex items-center justify-center">
                 <Globe className="h-16 w-16 text-white" />
               </div>
               <div className="p-6">
@@ -151,7 +153,7 @@ const HomePage = () => {
             
             {/* Project Card 3 */}
             <div className="cloud-card overflow-hidden">
-              <div className="h-48 bg-gradient-to-r from-aws-blue to-aws-orange flex items-center justify-center">
+              <div className="h-48 bg-gradient-to-r from-aws-blue to-cloud-blue flex items-center justify-center">
                 <Cpu className="h-16 w-16 text-white" />
               </div>
               <div className="p-6">
@@ -173,7 +175,7 @@ const HomePage = () => {
           
           <div className="text-center mt-12">
             <Link to="/projects">
-              <Button className="bg-aws-orange hover:bg-aws-orange/90 text-white">
+              <Button className="bg-cloud-blue hover:bg-cloud-blue/90 text-white">
                 View All Projects
               </Button>
             </Link>
@@ -188,7 +190,7 @@ const HomePage = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             I'm always interested in learning opportunities, collaborative projects, and networking with fellow computer science enthusiasts.
           </p>
-          <Button className="bg-aws-orange hover:bg-aws-orange/90 text-white" size="lg">
+          <Button className="bg-cloud-blue hover:bg-cloud-blue/90 text-white" size="lg">
             Get In Touch
           </Button>
         </div>
