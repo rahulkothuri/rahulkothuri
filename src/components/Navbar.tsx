@@ -32,9 +32,15 @@ const Navbar = () => {
             <Link to="/blog" className="text-gray-700 hover:text-aws-blue font-medium transition-colors">
               Blog
             </Link>
+            <a
+              href="https://linktr.ee/rahulkothuri"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <Button variant="outline" className="border-aws-blue text-aws-blue hover:bg-aws-blue hover:text-white">
               Contact
             </Button>
+            </a>
           </div>
           
           {/* Mobile menu button */}

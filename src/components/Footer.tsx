@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { SiGithub, SiLinkedin, SiGmail } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -28,14 +28,29 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-2">Connect</h3>
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-gray-300 hover:text-cloud-blue transition-colors">
-                <Github className="h-5 w-5" />
+              <a
+                href="https://github.com/rahulkothuri"
+                className="text-gray-300 hover:text-cloud-blue transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiGithub className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-cloud-blue transition-colors">
-                <Linkedin className="h-5 w-5" />
+              <a
+                href="https://www.linkedin.com/in/rahul-kothuri-565717186/"
+                className="text-gray-300 hover:text-cloud-blue transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiLinkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-cloud-blue transition-colors">
-                <Mail className="h-5 w-5" />
+              <a
+                href="mailto:rahulkothuri67@gmail.com"
+                className="text-gray-300 hover:text-cloud-blue transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiGmail className="h-5 w-5" />
               </a>
             </div>
           </div>

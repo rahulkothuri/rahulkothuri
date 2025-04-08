@@ -18,7 +18,7 @@ const HomePage = () => {
             <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
               <div className="relative w-64 h-64 rounded-full bg-gradient-to-r from-aws-blue to-cloud-blue p-1 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/9ac40d47-fe8d-4c74-9e13-be54b0bc27f8.png" 
+                  src="public\assets\9ac40d47-fe8d-4c74-9e13-be54b0bc27f8.png" 
                   alt="Rahul Kothuri" 
                   className="w-full h-full object-cover rounded-full"
                 />
@@ -29,7 +29,7 @@ const HomePage = () => {
                 Rahul Kothuri
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                Computer Science Student passionate about software development, cloud computing, and innovative technologies.
+                Computer Science and Data Science Student <br/> Innovative Cloud&nbsp;Engineer and DevOps Enthusiast <br/> Transforming Ideas into Scalable Solutions.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/projects">
@@ -37,9 +37,15 @@ const HomePage = () => {
                     View Projects
                   </Button>
                 </Link>
-                <Button className="bg-cloud-blue text-white hover:bg-cloud-blue/90" size="lg">
-                  Contact Me
-                </Button>
+                <a
+                  href="https://linktr.ee/rahulkothuri"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="bg-cloud-blue text-white hover:bg-cloud-blue/90" size="lg">
+                    Contact Me
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -53,12 +59,16 @@ const HomePage = () => {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-6 text-aws-blue">About Me</h2>
               <p className="text-gray-700 mb-6">
-                I'm a Computer Science student with a strong foundation in programming, algorithms, and data structures. 
-                My academic journey has exposed me to various technologies and domains in the field of computing.
+              My name is <b>Rahul Kothuri</b>, and I am a student at Mohan Babu University with a deep passion for Cloud Computing and DevOps. 
+              As a tech enthusiast, I love staying up to date with the latest advancements in technology. 
+              When I’m not working on projects or expanding my technical skills, you can find me immersed in self-help books, 
+              always striving for personal and professional growth.
               </p>
               <p className="text-gray-700 mb-6">
-                I'm particularly interested in cloud computing, web development, and software engineering. I enjoy learning new technologies 
-                and applying them to solve real-world problems through practical projects.
+              One of my main goals is to help others grow in their journey. I believe knowledge is most valuable when shared, and 
+              I strive to support my peers through mentoring, tutoring, or simply offering guidance. By fostering a collaborative 
+              and innovative environment, I aim to contribute to a thriving tech community.
+
               </p>
               <div className="flex gap-4">
                 <Button className="bg-aws-blue hover:bg-aws-blue/90 text-white">
@@ -191,9 +201,15 @@ const HomePage = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             I'm always interested in learning opportunities, collaborative projects, and networking with fellow computer science enthusiasts.
           </p>
-          <Button className="bg-cloud-blue hover:bg-cloud-blue/90 text-white" size="lg">
-            Get In Touch
-          </Button>
+          <a
+            href="https://linktr.ee/rahulkothuri"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-cloud-blue hover:bg-cloud-blue/90 text-white" size="lg">
+              Get In Touch
+            </Button>
+          </a>
         </div>
       </section>
     </div>
