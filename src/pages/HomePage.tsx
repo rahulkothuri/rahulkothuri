@@ -18,7 +18,7 @@ const HomePage = () => {
             <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
               <div className="relative w-64 h-64 rounded-full bg-gradient-to-r from-aws-blue to-cloud-blue p-1 overflow-hidden">
                 <img 
-                  src="public\assets\9ac40d47-fe8d-4c74-9e13-be54b0bc27f8.png" 
+                  src="public/assets/9ac40d47-fe8d-4c74-9e13-be54b0bc27f8.png" 
                   alt="Rahul Kothuri" 
                   className="w-full h-full object-cover rounded-full"
                 />
