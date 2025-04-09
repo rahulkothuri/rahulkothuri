@@ -11,7 +11,7 @@ import {
   Cloud
 } from "lucide-react";
 import { projectsData } from "../data/projectsData";
-import { NotFound } from "./NotFound";
+import NotFound from "./NotFound";
 
 const ProjectDetailPage = () => {
   const { id } = useParams<{ id: string }>();
