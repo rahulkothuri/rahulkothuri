@@ -88,9 +88,15 @@ const Navbar = () => {
               Blog
             </Link>
             <div className="px-3 py-2">
+            <a
+                href="https://linktr.ee/rahulkothuri"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <Button className="w-full bg-aws-blue text-white hover:bg-aws-blue/90">
                 Contact
               </Button>
+              </a>
             </div>
           </div>
         </div>

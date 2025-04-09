@@ -1,13 +1,13 @@
-
 import { Button } from "@/components/ui/button";
 import { Cloud, Database, Server, Settings, Monitor, Wifi } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const projectsData = [
   {
     id: 1,
-    title: "AWS Serverless API",
-    description: "Built a serverless API using AWS Lambda, API Gateway, and DynamoDB with infrastructure as code.",
-    tags: ["AWS Lambda", "API Gateway", "DynamoDB", "CloudFormation"],
+    title: "Automated Receipt Processing System",
+    description: "The Automated Receipt Processing System is designed to streamline the organization and management of paper receipts by leveraging AWS services.",
+    tags: ["AWS Lambda", "AWS S3", "DynamoDB", "AWS Textract","AWS SES"],
     icon: <Cloud className="h-12 w-12 text-aws-blue" />,
     color: "from-aws-blue to-cloud-blue"
   },
@@ -62,7 +62,7 @@ const ProjectsPage = () => {
           <h1 className="text-4xl font-bold mb-4">My Projects</h1>
           <p className="text-xl max-w-3xl">
             A collection of my work in cloud computing, focusing on AWS services, infrastructure as code, 
-            DevOps practices, and cloud architecture.
+            DevOps practices, and Machine Learning.
           </p>
         </div>
       </section>
@@ -87,7 +87,9 @@ const ProjectsPage = () => {
                     </span>
                   ))}
                 </div>
-                <Button className="w-full bg-aws-blue hover:bg-aws-blue/90">View Project</Button>
+                <Link to={`/projects/${project.id}`}>
+                  <Button className="w-full bg-aws-blue hover:bg-aws-blue/90">View Project</Button>
+                </Link>
               </div>
             </div>
           ))}
@@ -101,9 +103,15 @@ const ProjectsPage = () => {
           <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your cloud journey.
           </p>
+          <a
+            href="https://linktr.ee/rahulkothuri"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
           <Button className="bg-aws-orange hover:bg-aws-orange/90 text-white" size="lg">
             Contact Me
           </Button>
+          </a>
         </div>
       </section>
     </div>

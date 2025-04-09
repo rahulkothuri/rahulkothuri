@@ -141,27 +141,6 @@ const BlogPage = () => {
         </div>
       </section>
       
-      {/* Newsletter */}
-      <section className="bg-cloud-light py-16">
-        <div className="section-container text-center">
-          <h2 className="text-3xl font-bold mb-4 gradient-heading">Stay Updated</h2>
-          <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
-            Subscribe to my newsletter to receive the latest articles about cloud computing, AWS services, and DevOps best practices.
-          </p>
-          <div className="max-w-md mx-auto">
-            <div className="flex gap-2">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-aws-blue"
-              />
-              <Button className="bg-aws-orange hover:bg-aws-orange/90 text-white">
-                Subscribe
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
