@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Code, Database, GraduationCap, Cloud, Cpu, Globe } from "lucide-react";
+import { Code, Database, GraduationCap, Cloud, Cpu, Globe,FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -123,19 +123,20 @@ const HomePage = () => {
             {/* Project Card 1 */}
             <div className="cloud-card overflow-hidden">
               <div className="h-48 bg-gradient-to-r from-aws-blue to-cloud-blue flex items-center justify-center">
-                <Cloud className="h-16 w-16 text-white" />
+                <FileText className="h-16 w-16 text-white" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Cloud Project</h3>
+                <h3 className="text-xl font-bold mb-2">Automated Receipt Processing System</h3>
                 <p className="text-gray-600 mb-4">
-                  A serverless application built with AWS Lambda and API Gateway.
+                Automated Receipt Processing System is designed to streamline the organization and management of paper receipts by leveraging AWS services.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-gray-100 text-aws-blue text-xs rounded-full">AWS</span>
-                  <span className="px-2 py-1 bg-gray-100 text-aws-blue text-xs rounded-full">Serverless</span>
-                  <span className="px-2 py-1 bg-gray-100 text-aws-blue text-xs rounded-full">NodeJS</span>
+                  <span className="px-2 py-1 bg-gray-100 text-aws-blue text-xs rounded-full">AWS Lambda</span>
+                  <span className="px-2 py-1 bg-gray-100 text-aws-blue text-xs rounded-full">AWS S3</span>
+                  <span className="px-2 py-1 bg-gray-100 text-aws-blue text-xs rounded-full">DynamoDB</span>
+                  <span className="px-2 py-1 bg-gray-100 text-aws-blue text-xs rounded-full">AWS Textract</span>
                 </div>
-                <Link to="/projects">
+                <Link to="/projects/1">
                   <Button className="w-full bg-aws-blue hover:bg-aws-blue/90">View Details</Button>
                 </Link>
               </div>
