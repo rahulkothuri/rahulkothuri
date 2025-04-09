@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useParams, Link } from "react-router-dom";
 import { 
@@ -137,7 +136,7 @@ const ProjectDetailPage = () => {
                     <h3 className="text-xl font-semibold mb-2 text-aws-blue">3. Configure SES</h3>
                     <ol className="list-decimal pl-6 space-y-1 text-gray-700">
                       <li>Navigate to the <strong>Amazon SES</strong> console.</li>
-                      <li>Go to <strong>Configuration</strong> > <strong>Identities</strong>.</li>
+                      <li>Go to <strong>Configuration</strong> {'>'} <strong>Identities</strong>.</li>
                       <li>Click <strong>Create Identity</strong> and select <strong>Email Address</strong>.</li>
                       <li>Enter your email address and click <strong>Create Identity</strong>.</li>
                       <li>Check your email for a verification link and confirm the email address.</li>

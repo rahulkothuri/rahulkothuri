@@ -1,6 +1,7 @@
 
 import { ReactNode } from "react";
 import { FileText, Database, Server, Settings, Monitor, Wifi } from "lucide-react";
+import React from "react";
 
 export interface Project {
   id: number;
@@ -17,7 +18,7 @@ export const projectsData: Project[] = [
     title: "Automated Receipt Processing System",
     description: "The Automated Receipt Processing System is designed to streamline the organization and management of paper receipts by leveraging AWS services.",
     tags: ["AWS Lambda", "AWS S3", "DynamoDB", "AWS Textract", "AWS SES"],
-    icon: <FileText className="h-12 w-12 text-aws-blue" />,
+    icon: React.createElement(FileText, { className: "h-12 w-12 text-aws-blue" }),
     color: "from-aws-blue to-cloud-blue"
   },
   {
@@ -25,7 +26,7 @@ export const projectsData: Project[] = [
     title: "CI/CD Pipeline",
     description: "Automated deployment pipeline using AWS CodePipeline, CodeBuild, and CloudFormation for a React application.",
     tags: ["CodePipeline", "CodeBuild", "CloudFormation", "React"],
-    icon: <Server className="h-12 w-12 text-aws-blue" />,
+    icon: React.createElement(Server, { className: "h-12 w-12 text-aws-blue" }),
     color: "from-cloud-blue to-aws-orange"
   },
   {
@@ -33,7 +34,7 @@ export const projectsData: Project[] = [
     title: "Container Orchestration",
     description: "Deployed microservices on Amazon ECS with auto-scaling and load balancing.",
     tags: ["ECS", "Docker", "Terraform", "Microservices"],
-    icon: <Database className="h-12 w-12 text-aws-blue" />,
+    icon: React.createElement(Database, { className: "h-12 w-12 text-aws-blue" }),
     color: "from-aws-orange to-aws-blue"
   },
   {
@@ -41,7 +42,7 @@ export const projectsData: Project[] = [
     title: "Kubernetes Cluster",
     description: "Set up and managed a Kubernetes cluster on AWS EKS with monitoring and logging.",
     tags: ["Kubernetes", "EKS", "Prometheus", "Grafana"],
-    icon: <Settings className="h-12 w-12 text-aws-blue" />,
+    icon: React.createElement(Settings, { className: "h-12 w-12 text-aws-blue" }),
     color: "from-cloud-dark to-cloud-blue"
   },
   {
@@ -49,7 +50,7 @@ export const projectsData: Project[] = [
     title: "Multi-Region Infrastructure",
     description: "Designed and implemented a multi-region AWS architecture for high availability.",
     tags: ["Multi-Region", "Route53", "CloudFront", "Disaster Recovery"],
-    icon: <Wifi className="h-12 w-12 text-aws-blue" />,
+    icon: React.createElement(Wifi, { className: "h-12 w-12 text-aws-blue" }),
     color: "from-aws-blue to-aws-orange"
   },
   {
@@ -57,7 +58,7 @@ export const projectsData: Project[] = [
     title: "Performance Optimization",
     description: "Optimized cloud resources and reduced AWS costs by 30% while improving performance.",
     tags: ["Cost Optimization", "Performance", "CloudWatch", "Auto Scaling"],
-    icon: <Monitor className="h-12 w-12 text-aws-blue" />,
+    icon: React.createElement(Monitor, { className: "h-12 w-12 text-aws-blue" }),
     color: "from-cloud-blue to-aws-blue"
   }
 ];
