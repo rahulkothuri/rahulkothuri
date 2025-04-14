@@ -2,10 +2,23 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { projectsData } from "../data/projectsData";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const ProjectsPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+      <ScrollToTop />
       {/* Header */}
       <section className="bg-gradient-to-r from-aws-blue to-cloud-dark text-white py-16">
         <div className="section-container">

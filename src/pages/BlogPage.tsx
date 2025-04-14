@@ -2,6 +2,18 @@
 import { Button } from "@/components/ui/button";
 import { Cloud, Server, Database } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const blogPosts = [
   {
@@ -64,6 +76,7 @@ const BlogPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
+      <ScrollToTop />
       <section className="bg-gradient-to-r from-aws-blue to-cloud-dark text-white py-16">
         <div className="section-container">
           <h1 className="text-4xl font-bold mb-4">Cloud Engineering Blog</h1>

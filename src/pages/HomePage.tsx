@@ -1,11 +1,23 @@
-
 import { Button } from "@/components/ui/button";
 import { Code, Database, GraduationCap, Cloud, Cpu, Globe,FileText } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
+      <ScrollToTop />
       {/* Hero Section */}
       
       <section className="relative bg-gradient-to-r from-aws-blue to-cloud-dark text-white py-16 md:py-32">
@@ -72,7 +84,7 @@ const HomePage = () => {
               </p>
               <div className="flex gap-4">
                 <Button className="bg-aws-blue hover:bg-aws-blue/90 text-white">
-                  My Skills
+                  Resume
                 </Button>
                 <Link to="/projects">
                   <Button variant="outline" className="border-aws-blue text-aws-blue hover:bg-aws-blue/10">

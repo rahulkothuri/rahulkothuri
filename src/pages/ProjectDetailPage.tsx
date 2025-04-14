@@ -12,11 +12,23 @@ import {
 } from "lucide-react";
 import { projectsData } from "../data/projectsData";
 import NotFound from "./NotFound";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const ProjectDetailPage = () => {
   const { id } = useParams<{ id: string }>();
   const project = projectsData.find(p => p.id === Number(id));
-
+  <ScrollToTop />
   if (!project) {
     return <NotFound />;
   }
