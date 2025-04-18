@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Cloud, Server, Database } from "lucide-react";
+import { Cloud, Server, Database, Landmark } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -79,9 +79,9 @@ const BlogPage = () => {
       <ScrollToTop />
       <section className="bg-gradient-to-r from-aws-blue to-cloud-dark text-white py-16">
         <div className="section-container">
-          <h1 className="text-4xl font-bold mb-4">Cloud Engineering Blog</h1>
-          <p className="text-xl max-w-3xl">
-            Articles, tutorials, and insights about cloud computing, AWS services, DevOps practices, and more.
+          <h1 className="text-4xl font-bold mb-4">Personal Blog</h1>
+          <p className="text-xl max-w-5xl">
+            Articles, tutorials, and insights about cloud computing, AWS services, produtivity, and more.
           </p>
         </div>
       </section>
@@ -91,31 +91,37 @@ const BlogPage = () => {
         <div className="cloud-card p-0 overflow-hidden">
           <div className="md:flex">
             <div className="md:w-1/2 bg-gradient-to-br from-aws-blue via-cloud-blue to-aws-orange p-12 flex items-center justify-center">
-              <Cloud className="h-32 w-32 text-white" />
+              <Landmark className="h-32 w-32 text-white" />
             </div>
             <div className="md:w-1/2 p-8 md:p-12">
               <div className="flex items-center space-x-2 mb-4">
                 <span className="text-sm text-aws-orange font-semibold">FEATURED</span>
                 <span className="text-gray-400">•</span>
-                <span className="text-sm text-gray-600">April 5, 2025</span>
+                <span className="text-sm text-gray-600">April 19, 2023</span>
                 <span className="text-gray-400">•</span>
-                <span className="text-sm text-gray-600">15 min read</span>
+                <span className="text-sm text-gray-600">3 min read</span>
               </div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                The Future of Cloud Computing: Trends to Watch in 2025
+                Skill vs Degree: What Sets Successful Computer Science Students Apart
               </h2>
               <p className="text-gray-600 mb-6">
-                Explore emerging trends in cloud computing, from serverless architectures to edge computing, 
-                and learn how these innovations are reshaping the technology landscape.
+              As a computer science student, you may wonder what sets you apart from your peers. It’s true that everyone 
+              is exposed to the same curriculum, but what truly makes a difference is what you do beyond formal education.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-aws-gray text-aws-blue text-sm rounded-full">Cloud Computing</span>
-                <span className="px-3 py-1 bg-aws-gray text-aws-blue text-sm rounded-full">Serverless</span>
-                <span className="px-3 py-1 bg-aws-gray text-aws-blue text-sm rounded-full">Edge Computing</span>
+                <span className="px-3 py-1 bg-aws-gray text-aws-blue text-sm rounded-full">Skills</span>
+                <span className="px-3 py-1 bg-aws-gray text-aws-blue text-sm rounded-full">Degree</span>
+                <span className="px-3 py-1 bg-aws-gray text-aws-blue text-sm rounded-full">Students</span>
               </div>
+              <a
+                href="https://rahulkothuri.medium.com/skill-vs-degree-what-sets-successful-computer-science-students-apart-253c344e6b4b"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <Button className="bg-aws-blue hover:bg-aws-blue/90">
                 Read Article
               </Button>
+              </a>
             </div>
           </div>
         </div>
